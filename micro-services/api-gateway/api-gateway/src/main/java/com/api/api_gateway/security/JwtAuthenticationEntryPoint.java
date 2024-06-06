@@ -20,9 +20,5 @@ public class JwtAuthenticationEntryPoint  {
         response.getWriter().write(json);
 
     }
-
-    @Override
-    public void commence(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {
-
-    }
+    
 }
