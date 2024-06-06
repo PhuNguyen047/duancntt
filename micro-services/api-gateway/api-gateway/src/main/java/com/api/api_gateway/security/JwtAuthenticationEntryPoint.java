@@ -20,5 +20,5 @@ public class JwtAuthenticationEntryPoint  {
         response.getWriter().write(json);
 
     }
-    
+
 }
