@@ -30,6 +30,7 @@ public class CourseController {
     public ResponseEntity<CourseDTO> getCourseById(@PathVariable Long id) {
         log.info("Getting course by id: {}", id);
         CourseDTO course = courseService.getCourseById(id);
+
         return ResponseEntity.ok(course);
     }
 
