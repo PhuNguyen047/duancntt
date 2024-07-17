@@ -1,0 +1,207 @@
+/* Navbar Styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 10px;
+    width: auto;
+    height: 50px;
+}
+
+.nav .logo .icon{
+    width: 80px;
+    height: 70px;
+    margin-top: 15px;
+}
+
+.nav .theme-toggle {
+    cursor: pointer;
+    font-size: 40px;
+    background: none;
+    border: none;
+}
+
+.nav .nav-menu {
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.nav .nav-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav.dark .nav-menu a {
+    color: white;
+}
+
+.nav .nav-menu li:hover {
+    background-color: gray;
+    border-radius: 20px;
+}
+
+.nav .nav-menu li:active {
+    border-radius: 40px;
+    background-color: green;
+}
+
+.nav .nav-menu .nav-button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.nav .nav-menu .nav-button:hover {
+    background-color: gray;
+}
+
+.nav .mobile-menu-icon {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav .dropdown {
+    width: 12%;
+    height: 80%;
+    border-radius: 20px;
+    padding: 10px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+.nav .dropdown option {
+    background-color: #fff;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.nav .search-bar{
+    border-radius: 20px;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.nav .search-bar button{
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.nav .search-bar button:hover {
+    background-color: gray;
+}
+
+
+/* Theme Color Styles */
+.nav.light {
+    background-color: white;
+    color: black;
+}
+
+.nav.dark {
+    background-color: #333;
+    color: white;
+}
+
+.nav.light .nav-menu li:hover {
+    background-color: aqua;
+}
+
+.nav.dark .nav-menu li:hover {
+    color: white;
+    background-color: #00cccc;
+}
+
+.nav.light .nav-menu li:active {
+    background-color: green;
+}
+
+.nav.dark .nav-menu li:active {
+    background-color: #008080;
+}
+
+.nav.light .nav-button {
+    background-color: black;
+    color: white;
+}
+
+.nav.dark .nav-button {
+    background-color: white;
+    color: black;
+}
+
+.nav.light .nav-button:hover {
+    background-color: gray;
+}
+
+.nav.dark .nav-button:hover {
+    background-color: #ccc;
+}
+
+.nav.light .search-bar button {
+    background-color: black;
+    color: white;
+}
+
+.nav.dark .search-bar button {
+    background-color: white;
+    color: black;
+}
+
+.white-text {
+    color: white !important;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+    .nav .nav-menu {
+        display: none;
+    }
+
+    .nav .nav-menu-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        border-top: 1px solid #ccc;
+        padding: 20px 0;
+    }
+
+    .nav .nav-menu-mobile li {
+        margin: 10px 0;
+    }
+
+    .nav .mobile-menu-icon {
+        display: block;
+    }
+}

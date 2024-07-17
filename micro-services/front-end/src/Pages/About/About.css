@@ -1,0 +1,175 @@
+.about .title {
+    font-size: 50px;
+    margin: 0;
+    color: sandybrown;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.service {
+    width: 22%;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+    text-align: center;
+    margin: 10px 0;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service:hover .icon {
+    color: #007bff;
+}
+
+.icon-text .icon-image{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 30px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+    transition: transform 0.3s;
+}
+
+.icon-text .icon-image:hover {
+    transform: scale(3.3);
+}
+
+.service-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.service:hover .service-title {
+    color: #007bff;
+}
+
+p {
+    margin-bottom: 0;
+    color: #6c757d;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.goals-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.stat {
+    width: 22%;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+    text-align: center;
+    margin: 10px 0;
+    padding: 20px;
+    transition: transform 0.3s;
+    font-size: 30px;
+}
+
+.stat p {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.about-teacher .container {
+    padding: 40px 0;
+}
+
+.about-teacher .section-heading {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.about-teacher .info{
+    color: #6c757d;
+    width: 80%;
+}
+
+.team-col {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.team-item {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team-item:hover {
+    transform: translateY(-10px);
+}
+
+.team-img {
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+.team-img img {
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.team-item:hover .team-img img {
+    transform: scale(1.1);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+.social-links .btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.social-links .btn:hover {
+    background-color: #0056b3;
+}
+
+.team-info {
+    padding: 20px;
+}
+
+.team-info h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.team-info small {
+    color: #6c757d;
+}
+ 

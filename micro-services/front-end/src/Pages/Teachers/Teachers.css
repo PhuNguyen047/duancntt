@@ -1,0 +1,150 @@
+.teachers-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+}
+
+.banner .title {
+    color: tomato;
+    font-size: 3em;
+    margin: 0;
+}
+
+.banner .note {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: saddlebrown;
+}
+
+.teachers-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.top-row,
+.second-row,
+.third-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.teacher-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.teacher-card:hover {
+    transform: translateY(-10px);
+}
+
+.teacher-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.teachers-page .title-teacher {
+    font-size: 2em;
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.teacher-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.teacher-card p{
+    font-size: 1em;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.teacher-card .quote {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.teacher-card .social-media {
+    margin-top: 10px;
+}
+
+.teacher-card .social-media a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 30px;
+}
+
+.teacher-card .social-media a:hover {
+    color: tomato;
+}
+
+.teachers-page .overlay-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.teachers-page .image-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.teachers-page .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.teachers-page .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.5s ease;
+    transform: translateY(100%);
+}
+
+.teachers-page .image-container:hover .overlay {
+    transform: translateY(0);
+}
+
+.teachers-page .overlay .text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 3em;
+    padding: 230px;
+    text-align: left;
+}

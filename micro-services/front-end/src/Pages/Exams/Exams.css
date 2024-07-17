@@ -1,0 +1,37 @@
+.logged-in .welcome-message {
+    display: block;
+}
+
+.logged-out .login-prompt {
+    display: block;
+}
+
+.welcome-message, .login-prompt {
+    text-align: center;
+}
+
+.test-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.welcome-message h1{
+    font-size: 50px;
+    color: sandybrown;
+}
+
+.welcome-message p{
+    font-size: 20px;
+    color: #333;
+}
+
+.welcome-message button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background: sandybrown;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}

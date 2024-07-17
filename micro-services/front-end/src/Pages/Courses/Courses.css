@@ -1,0 +1,294 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0px;
+  margin-left: auto;
+}
+
+.header .search-bar {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.search-button {
+  padding: 8px 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.create-button,
+.dialog-button {
+  padding: 11px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.create-button:hover,
+.dialog-button:hover {
+  background-color: #218838;
+}
+
+.class-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  font-size: 20px;
+}
+
+.list-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.class-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.list-text {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.class-name,
+.class-description,
+.class-teacher,
+.class-dates {
+  margin: 5px 0;
+}
+
+.class-name {
+  font-weight: bold;
+}
+
+.class-tags {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-button,
+.delete-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog .dialog-action-button {
+  background-color: #28a745;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.dialog {
+  background-color: white;
+  padding: 20px;
+  width: 600px;
+  border-radius: 8px;
+}
+
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.dialog-close-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dialog-input {
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.tag-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tag-add-button {
+  font-size: 15px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.tag-delete-button {
+  font-size: 15px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.tag-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag-button,
+.tag-item {
+  background-color: yellowgreen;
+  color: black;
+  border-radius: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.tag-button:hover,
+.tag-item:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+.image-preview {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dialog-action-button,
+.dialog-button {
+  padding: 11px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.dialog-button:hover {
+  background-color: #218838;
+}
+
+.delete-confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-confirm-dialog {
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.delete-confirm-dialog p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.delete-confirm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.delete-confirm-button,
+.delete-cancel-button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.delete-confirm-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.delete-confirm-button:hover {
+  background-color: #c82333;
+}
+
+.delete-cancel-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+}
+
+.delete-cancel-button:hover {
+  background-color: #5a6268;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}

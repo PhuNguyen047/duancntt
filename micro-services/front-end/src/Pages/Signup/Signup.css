@@ -1,0 +1,175 @@
+.signup-temp .signup-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.signup-temp {
+    margin-top: 30px;
+    margin: 0 auto;
+    width: 500px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+.signup-temp .title {
+    text-align: center;
+    color: black;
+    border: none;
+}
+
+.signup .note {
+    text-align: center;
+    color: black;
+    margin-bottom: 1em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group p{
+    color: black;
+    font-weight: bolder;
+}
+
+.signup-temp form a {
+    text-align: center;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.signup-temp form a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.signup p {
+    color: black;
+    display: block;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.role-group {
+    display: flex;
+    gap: 30px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: black;
+}
+
+.role-group div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.role-group p{
+    color: black; 
+    font-weight: bolder;
+}
+
+input, select {
+    width: calc(100% - 20px);
+    padding: 0.5em;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+}
+
+.signup button {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.signup button:hover {
+    background-color: #0056b3;
+}
+
+.signup-temp .signup .error {
+    color: black;
+    background-color: red;
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.signup-temp .signup .success {
+    color: black;
+    background-color: green;
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.signup .social-buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    border-radius: 0.5em;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50%;
+    background-color: aliceblue;
+}
+
+.signup .social-buttons button:hover {
+    background-color: gray;
+}
+
+.signup .social-buttons button i {
+    margin-right: 10px;
+}
+
+.role-title {
+    margin-left: 5px;
+    color: black;
+}
+
+.role-group input {
+    margin-right: 5px;
+}
+
+.signup-temp .signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-temp .signup form {
+    width: 100%;
+}
