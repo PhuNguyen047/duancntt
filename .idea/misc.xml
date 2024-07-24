@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/Duancntt/pom.xml" />
         <option value="$PROJECT_DIR$/micro-services/user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-services/course-service/course-service/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-services/enrollment-service/enrollment-service/pom.xml" />
       </list>
     </option>
   </component>
