@@ -62,6 +62,22 @@ public class ContentService {
         return null;
     }
 
+    public void deleteContent(Long contentId) {
+        contentRepository.deleteById(contentId);
+    }
+
+    private ContentDTO mapContentToContentDTO(Content content) {
+        ContentDTO contentDTO = new ContentDTO();
+        contentDTO.setId(content.getId());
+        contentDTO.setTitle(content.getTitle());
+        contentDTO.setDescription(content.getDescription());
+        contentDTO.setCreatedDate(content.getCreatedDate());
+        contentDTO.setLastModifiedDate(content.getLastModifiedDate());
+        contentDTO.setContentUrl(content.getContentUrl());
+        contentDTO.setContentType(content.getContentType());
+        contentDTO.setCourseId(content.getCourse().getId());
+        return contentDTO;
+    }
 
 
 }
