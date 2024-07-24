@@ -11,5 +11,17 @@ public class UserDTO {
     private String username;
     private String email;
     private String password;
-    private Set<String> roles;
+
+    public UserDTO(Long id, String username, String email, String password) {
+        this.id = id;
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
+
+    public UserDTO(String username, String email, String password) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
 }
