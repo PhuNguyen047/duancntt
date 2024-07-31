@@ -32,7 +32,7 @@
     color: #007bff;
 }
 
-.icon-text .icon-image{
+.icon-text .icon-image {
     width: 100px;
     height: 100px;
     margin: 0 auto;
@@ -97,79 +97,59 @@ p {
     }
 }
 
-.about-teacher .container {
-    padding: 40px 0;
+/* Partner Network Section */
+.partner-network {
+    margin: 60px 0;
 }
 
-.about-teacher .section-heading {
+.partner-title {
     font-size: 32px;
-    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: 40px;
+    color: sandybrown;
 }
 
-.about-teacher .info{
-    color: #6c757d;
-    width: 80%;
-}
-
-.team-col {
+.partners {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
-.team-item {
+.partner-item {
+    width: 22%;
     background-color: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
     text-align: center;
+    margin: 10px 0;
     transition: transform 0.3s;
 }
 
-.team-item:hover {
+.partner-item:hover {
     transform: translateY(-10px);
 }
 
-.team-img {
-    overflow: hidden;
-    border-radius: 8px 8px 0 0;
-}
-
-.team-img img {
+.partner-img img {
     width: 100%;
+    border-radius: 8px 8px 0 0;
     transition: transform 0.3s;
 }
 
-.team-item:hover .team-img img {
+.partner-item:hover .partner-img img {
     transform: scale(1.1);
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    margin-top: -20px;
-    background-color: #f8f9fa;
-    padding: 10px 0;
-}
-
-.social-links .btn {
-    background-color: #007bff;
-    color: white;
-}
-
-.social-links .btn:hover {
-    background-color: #0056b3;
-}
-
-.team-info {
+.partner-info {
     padding: 20px;
 }
 
-.team-info h5 {
+.partner-info h5 {
     font-size: 18px;
     margin-bottom: 5px;
+    font-weight: 700;
 }
 
-.team-info small {
+.partner-info p {
     color: #6c757d;
+    font-size: 14px;
 }
- 
