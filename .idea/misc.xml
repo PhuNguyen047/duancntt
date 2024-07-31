@@ -5,18 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Duancntt/pom.xml" />
-        <option value="$PROJECT_DIR$/micro-services/user-service/pom.xml" />
-        <option value="$PROJECT_DIR$/micro-services/course-service/course-service/pom.xml" />
-        <option value="$PROJECT_DIR$/micro-services/enrollment-service/enrollment-service/pom.xml" />
-        <option value="$PROJECT_DIR$/micro-services/content-service/pom.xml" />
-        <option value="$PROJECT_DIR$/micro-services/course-service/pom.xml" />
-        <option value="$PROJECT_DIR$/micro-services/enrollment-service/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/micro-services/content-service/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_20" default="true" project-jdk-name="20" project-jdk-type="JavaSDK">
