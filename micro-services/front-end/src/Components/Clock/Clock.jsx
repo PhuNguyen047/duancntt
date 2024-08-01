@@ -18,7 +18,11 @@ const Clock = () => {
 
     const getGreeting = () => {
         const hours = new Date().getHours();
-        return hours < 12 ? 'GOOD MORNING' : 'GOOD AFTERNOON';
+        if(hours >12){
+            return 'GOOD AFTERNOON';
+        }else{
+            return 'GOOD MORNING';
+        }
     };
 
     const [currentTime, setCurrentTime] = useState(getFormattedTime());
@@ -41,5 +45,4 @@ const Clock = () => {
         </div>
     );
 }
-
 export default Clock;

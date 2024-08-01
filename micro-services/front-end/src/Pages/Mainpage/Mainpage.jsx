@@ -2,6 +2,7 @@ import './Mainpage.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import video2 from '../../assets/videos/video2.mp4';
 
 const Mainpage = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -33,7 +34,11 @@ const Mainpage = () => {
         <>
           <Navbar isLoggedIn={isLoggedIn} />
           <div className='user-greeting'>
-            Welcome, {username}!
+            <video className='background fade-in' autoPlay loop muted>
+              <source src={video2} type='video/mp4'/>
+            </video>
+            <div className="mainpage_content">
+            </div>
           </div>
         </>
       )}

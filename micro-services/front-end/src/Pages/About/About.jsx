@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
 import CountUp from 'react-countup';
 import './About.css';
+import history from '../../assets/images/history.png';
 import partner1 from '../../assets/images/Partner/partner1.png';
 import partner2 from '../../assets/images/Partner/partner2.png';
 import partner3 from '../../assets/images/Partner/partner3.jpg';
@@ -12,6 +13,10 @@ const About = () => {
         <div className='about'>
             <Navbar/>
             <h1 className='title'>ABOUT US</h1>
+            <div className="about_history">
+                <img src={history}/>
+                <p className="history-text">ESTABLISHED AROUND THE LATE 2010, WE ARE ONE OF THE PIONEERS IN ONLINE TEACHING TECHNOLOGY. WITH MORE THAN 10 YEARS OF EXPERIENCE IN THE INDUSTRY, WE CONSTANTLY PROVIDE USERS THE BEST USER EXPERIENCE.</p>
+            </div>
             <div className="content">
                 <div className="services">
                     <div className="service fade-in">
@@ -55,7 +60,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <h1 className='title'>OUR GOALS</h1>
+                <h1 className='title'>OUR ACHIVEMENTS</h1>
                 <div className="goals-section">
                     <div className="stat">
                         <CountUp end={200} duration={3}/>+
@@ -92,7 +97,7 @@ const About = () => {
                             </div>
                             <div className="partner-info">
                                 <h5>AMA ACADEMY</h5>
-                                <p>Short description or tagline about the partner.</p>
+                                <p>Being a closed partner since 2014.</p>
                             </div>
                         </div>
                         <div className="partner-item">
@@ -101,7 +106,7 @@ const About = () => {
                             </div>
                             <div className="partner-info">
                                 <h5>ILA CENTER</h5>
-                                <p>Short description or tagline about the partner.</p>
+                                <p>Being a closed partner since 2018.</p>
                             </div>
                         </div>
                         <div className="partner-item">
@@ -110,7 +115,7 @@ const About = () => {
                             </div>
                             <div className="partner-info">
                                 <h5>MINDX TECHNOLOGY</h5>
-                                <p>Short description or tagline about the partner.</p>
+                                <p>Being a closed partner since 2022.</p>
                             </div>
                         </div>
                         <div className="partner-item">
@@ -119,7 +124,7 @@ const About = () => {
                             </div>
                             <div className="partner-info">
                                 <h5>ICTI TECHNOLOGY CENTER</h5>
-                                <p>Short description or tagline about the partner.</p>
+                                <p>Being a closed partner since 2024.</p>
                             </div>
                         </div>
                     </div>
